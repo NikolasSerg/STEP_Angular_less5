@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-blog',
@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  // @ts-ignore
+  arrBlog: [{id: number, title: string, post: string}] = [{
+    id: 1,
+    title: 'Lorem',
+    post: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur cupiditate harum, molestiae tempore totam.'
+  },
+    {
+      id: 2,
+      title: 'Lorem2',
+      post: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur cupiditate harum, molestiae tempore totam.'
+    }];
 
   ngOnInit() {
   }

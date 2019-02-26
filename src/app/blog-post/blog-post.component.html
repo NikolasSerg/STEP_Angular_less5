@@ -4,4 +4,13 @@
       <h1>BLOG-POST</h1>
     </div>
   </div>
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title">{{post.title}}</h1>
+      <p class="card-text bg-success">{{post.post}}</p>
+      <h5>{{post.id}}</h5>
+      <button [routerLink]="['/blog', post.id]">read more</button>
+    </div>
+  </div>
+  <hr>
 </div>
